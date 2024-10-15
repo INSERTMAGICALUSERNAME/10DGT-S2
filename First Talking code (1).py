@@ -20,7 +20,7 @@ while Loopy_mc_looper == "":
     else:
         print("Use a normal answer please ಠ~ಠ\n")
 
-    if Like_Roblox == "no" or Like_Roblox == "n" and Like_Minecraft == "no" or Like_Minecraft == "n":
+    if ((Like_Roblox == "no" or Like_Roblox == "n") and (Like_Minecraft == "no" or Like_Minecraft == "n")):
         Play_video_game = input ("ծ_Ô Do you play videogames?").lower()
         if Play_video_game == "yes" or Play_video_game== "y":
             print("so why no minecraft? (≖_≖ )\n")
