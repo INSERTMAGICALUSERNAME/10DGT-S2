@@ -28,8 +28,8 @@ while loopy_mc_looper == '':
     print (f'The Height of your shape is {height}\n')
     perimeter = (width * 2) + (height * 2) 
     area = width * height 
-    print(f'The perimeter of your shape is {perimeter}\n')
-    print (f'The area of your shape is {area}\n')
+    print(f'The perimeter of your shape is {perimeter} units\n')
+    print (f'The area of your shape is {area} square units\n')
 
     Go_again = input("Do you want me to ask again? (Y/N)").lower()
     if Go_again == "no" or Go_again == "n":
