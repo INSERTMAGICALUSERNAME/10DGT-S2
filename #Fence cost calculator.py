@@ -1,7 +1,7 @@
 #Fence cost calculator 
 #Author: Johann Shobolt
-#Date: 2024/10/30
-#Version: 3
+#Date: 2024/10/31
+#Version: 4
 
 
 print ()
@@ -24,22 +24,28 @@ def valid_num (question):
 loopy_mc_looper = ''
 while loopy_mc_looper == '':
     width = valid_num('Enter your width:\n')
-    print (f'The width of your shape is {width}')
+    print (f'The width of your area is {width}')
 
-    height = valid_num('Now enter the shapes height:\n')
-    print (f'The Height of your shape is {height}\n')
+    length = valid_num('Enter the shapes length:\n')
+    print (f'The length of your area is {length}\n')
 
     fence_cost = valid_num(f'What is the cost per metre of each fence?\n')
     print (f'The cost of each fence is {fence_cost}\n')
 
-    perimeter = (width * 2) + (height * 2) 
+    print ('______________________\n')
+
+    perimeter = (width * 2) + (length * 2) 
     print(f'The perimeter of your shape is {perimeter} units\n')
 
+    print ('______________________\n')
+
     total_fence_cost = perimeter * fence_cost
-    print (f'The cost total cost of the fence is ${total_fence_cost}')
+    print (f'The cost total cost of the fence is ${total_fence_cost}\n')
+
+    print ('______________________\n')
     
     
-    loopy_mc_looper = input("Do you want me to ask again? <enter> to keep going, anything else to stop").lower()
+    loopy_mc_looper = input("Do you want me to ask again? <enter> to keep going, anything else to stop\n").lower()
     if loopy_mc_looper == '':
         print ()
     else:
