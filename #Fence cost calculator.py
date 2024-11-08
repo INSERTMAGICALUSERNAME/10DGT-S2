@@ -23,7 +23,7 @@ def valid_num (question): # Function to output a valid number
 
 loopy_mc_looper = ''#this is a loop variable
 while loopy_mc_looper == '':
-    width = valid_num('Enter your width:\n')#asking for width
+    width = valid_num('Enter your width in meters:\n')#asking for width
     print (f'The width of your area is {width}')
 
     length = valid_num('Enter the shapes length:\n')#asking for height
@@ -51,5 +51,5 @@ while loopy_mc_looper == '':
     if loopy_mc_looper == '':
         print ()
     else:
-        print ('Thank You for using this calculator')
+        print ('Thank You for using this calculator')#exit message
 
