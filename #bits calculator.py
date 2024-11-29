@@ -12,8 +12,7 @@ def valid_num (question): # Function to output a valid number
             if 0 < response: 
                 break
             else:
-                print (error)
-                print ()
+                print (f'{error}\n')
         except ValueError:
             print (error)
     return response
@@ -24,12 +23,12 @@ loopy_mc_looper = ''#this is the loop variable
 while loopy_mc_looper == '':
     print ('______________________\n') #line breaks make output easier to read
 
-    selection = valid_num('Enter a number that corresponds to the data type that you want \n1:Text \n2:Image \n3:integer\n')#asking what they want calculated
-
+    selection = valid_num('Enter a number that corresponds to the data type that you want \n1:Text \n2:Image \n3:Integer\n')#asking what they want calculated
+    print ('______________________\n')
     if selection == 1:
-        text_bit = len(input('Enter your string (only use ascii symbols and no numbers)\n'))* 8 #getting the input, counting it and then multiplying by eight
+        text_bit = len(input('Enter your sentence (only use ascii symbols and no numbers)\n'))* 8 #getting the input, counting it and then multiplying by eight
 
-        print (f'the amount of bits needed to calculate your string is {text_bit}\n')#out put
+        print (f'the amount of bits needed to represent your sentence is:\n{text_bit}\n')#out put
         print ('______________________\n')
 
     #find pixels up find pixels across, multply them, then times by 24
@@ -41,7 +40,7 @@ while loopy_mc_looper == '':
         print ('______________________\n') #line breaks make output easier to read
     
     elif selection == 3:
-        integer_bit  = len(str(bin(valid_num("Enter the integer\n" ))[2:])) # converting input to binary, turning into a string, and then counting the digits
+        integer_bit  = len(str(bin(valid_num("Enter the integer:\n" ))[2:])) # converting input to binary, turning into a string, and then counting the digits
         print (f'the amount of bits needed is {integer_bit}') # output 
     
     else:(print(f'Mate, you had one job, it was a choice between 1 2 or 3, and you chose {selection}?\n')) # fail response
